@@ -11,7 +11,7 @@ public class JokeController {
 
 
 
-    @GetMapping("/index")
+    @GetMapping("/home")
     public String home()
     {
 return "index";

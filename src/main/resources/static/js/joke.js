@@ -7,9 +7,8 @@ function getData()
         type: "GET",
         contentType: "application/json",
         url: "/jokes",
-        dataType: 'json',
         success: function (data) {
-            $("#joke").append(data);
+            $("#joke").append(JSON.stringify(data));
 
         },
         error: function (e) {
